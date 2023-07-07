@@ -1,0 +1,139 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <AssemblyName>Elderand.Randomizer</AssemblyName>
+    <TargetName>Randomizer</TargetName>
+    <BepInExPluginName>Randomizer</BepInExPluginName>
+    <Description>A randomizer mod</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="2021.3.10" IncludeAssets="compile" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <Target Name="Development" AfterTargets="PostBuildEvent">
+
+    <!-- Copy plugin to development folder -->
+    <PropertyGroup>
+      <DevFolder>C:\Program Files (x86)\Steam\steamapps\common\Elderand\BepInEx\plugins</DevFolder>
+    </PropertyGroup>
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(DevFolder)" />
+    
+  </Target>
+  
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\lib\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\lib\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\lib\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\lib\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Achievements">
+      <HintPath>..\lib\Elderand.Achievements.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.AI">
+      <HintPath>..\lib\Elderand.AI.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Analytics">
+      <HintPath>..\lib\Elderand.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.ApplicationManager">
+      <HintPath>..\lib\Elderand.ApplicationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.AssetManagement">
+      <HintPath>..\lib\Elderand.AssetManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Audio">
+      <HintPath>..\lib\Elderand.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Battle">
+      <HintPath>..\lib\Elderand.Battle.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Data">
+      <HintPath>..\lib\Elderand.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.DevTools">
+      <HintPath>..\lib\Elderand.DevTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Effects">
+      <HintPath>..\lib\Elderand.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Gameplay">
+      <HintPath>..\lib\Elderand.Gameplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Inputs">
+      <HintPath>..\lib\Elderand.Inputs.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Level">
+      <HintPath>..\lib\Elderand.Level.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Paths">
+      <HintPath>..\lib\Elderand.Paths.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Persistence">
+      <HintPath>..\lib\Elderand.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Player">
+      <HintPath>..\lib\Elderand.Player.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Player.References">
+      <HintPath>..\lib\Elderand.Player.References.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Projectiles">
+      <HintPath>..\lib\Elderand.Projectiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Rituals">
+      <HintPath>..\lib\Elderand.Rituals.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.SceneObjects">
+      <HintPath>..\lib\Elderand.SceneObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Shake">
+      <HintPath>..\lib\Elderand.Shake.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Shared">
+      <HintPath>..\lib\Elderand.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.SkillEffects">
+      <HintPath>..\lib\Elderand.SkillEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.UI">
+      <HintPath>..\lib\Elderand.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugins.I2Localization">
+      <HintPath>..\lib\Plugins.I2Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\lib\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\lib\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\lib\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\lib\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\lib\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
