@@ -19,15 +19,19 @@ namespace Elderand.Randomizer.Items
             ItemReward item = Main.ItemRandomizer.GetItemAtLocation(locationId);
             Main.Log("Location id for chest: " + locationId);
 
-            DropValueData drop = new(new List<ItemDropValue>()
+            if (item != null)
             {
-                new ItemDropValue()
+                // If there is a random item at this location
+                DropValueData drop = new(new List<ItemDropValue>()
                 {
-                    item = Main.Data.GetItemObject(item == null ? "Potion01" : item.id),
-                    amount = 1
-                }
-            });
-            __instance.outDrop.value = drop;
+                    new ItemDropValue()
+                    {
+                        item = Main.Data.GetItemObject(item.id),
+                        amount = 1
+                    }
+                });
+                __instance.outDrop.value = drop;
+            }
         }
     }
 
@@ -43,7 +47,11 @@ namespace Elderand.Randomizer.Items
             ItemReward item = Main.ItemRandomizer.GetItemAtLocation(locationId);
             Main.Log("Location id for drop item: " + locationId);
 
-            __instance.SetItem(Main.Data.GetItemObject(item == null ? "Potion01" : item.id), 1);
+            if (item != null)
+            {
+                // If there is a random item at this location
+                __instance.SetItem(Main.Data.GetItemObject(item.id), 1);
+            }
         }
     }
 

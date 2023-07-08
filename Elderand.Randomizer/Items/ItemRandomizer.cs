@@ -41,12 +41,12 @@ namespace Elderand.Randomizer.Items
             List<string> locationIds = Main.Data.AllItemLocations;
             List<string> itemIds = new(Main.Data.AllItemRewards.Keys);
 
-            if (locationIds.Count != itemIds.Count)
-                throw new System.Exception("Item list and location list are different sizes");
+            //if (locationIds.Count != itemIds.Count)
+            //    throw new System.Exception("Item list and location list are different sizes");
 
             System.Random rng = new();
 
-            while (itemIds.Count > 0)
+            while (locationIds.Count > 0)
             {
                 int itemIdx = itemIds.Count - 1;
                 int locationIdx = rng.Next(locationIds.Count);
@@ -59,17 +59,6 @@ namespace Elderand.Randomizer.Items
 
             Main.LogWarning("Shuffled all items and locations");
         }
-
-        private Dictionary<string, string> tempItemMapping = new()
-        {
-            //{ "Drop_Light_Sword", "Gurom'karah" },
-            //{ "Cave_38_Chest_01", "The Interior" },
-            //{ "Drop_Fool's_Letter", "Lasher's Whip" },
-            //{ "Cave_05_Chest_01", "HealthOrb" },
-            //{ "Drop_Observer's_Notes_#1", "Crimson Jewel Buckler" },
-            //{ "Cave_05_Chest_02", "Nyeth's Feather" },
-            //{ "Cave_16_Chest_01", "Last Hook" },
-        };
 
         string[] items = new string[]
         {

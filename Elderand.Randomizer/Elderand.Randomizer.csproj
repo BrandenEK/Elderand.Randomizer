@@ -24,11 +24,41 @@
 
   <Target Name="Development" AfterTargets="PostBuildEvent">
 
+    <!-- Get resource files -->
+    <PropertyGroup>
+      <ResourcesFolder>$(SolutionDir)resources\</ResourcesFolder>
+    </PropertyGroup>
+    <ItemGroup>
+      <DataDlls Include="$(ResourcesFolder)data\*" />
+      <DataFiles Include="$(ResourcesFolder)data\$(BepInExPluginName)\*" />
+      <Keybindings Include="$(ResourcesFolder)keybindings\*" />
+      <Levels Include="$(ResourcesFolder)levels\$(BepInExPluginName)\*" />
+      <Localization Include="$(ResourcesFolder)localization\*" />
+    </ItemGroup>
+    
     <!-- Copy plugin to development folder -->
     <PropertyGroup>
-      <DevFolder>C:\Program Files (x86)\Steam\steamapps\common\Elderand\BepInEx\plugins</DevFolder>
+      <DevFolder>C:\Program Files (x86)\Steam\steamapps\common\Elderand\Modding\</DevFolder>
     </PropertyGroup>
-    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(DevFolder)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(DevFolder)plugins" />
+    <Copy SourceFiles="@(DataDlls)" DestinationFolder="$(DevFolder)data" />
+    <Copy SourceFiles="@(DataFiles)" DestinationFolder="$(DevFolder)data\$(BepInExPluginName)" />
+    <Copy SourceFiles="@(Keybindings)" DestinationFolder="$(DevFolder)keybindings" />
+    <Copy SourceFiles="@(Levels)" DestinationFolder="$(DevFolder)levels\$(BepInExPluginName)" />
+    <Copy SourceFiles="@(Localization)" DestinationFolder="$(DevFolder)localization" />
+
+    <!-- Export & zip all mod files -->
+    <PropertyGroup>
+      <ExportFolder>$(SolutionDir)export\$(TargetName)\</ExportFolder>
+    </PropertyGroup>
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ExportFolder)plugins" />
+    <Copy SourceFiles="@(Config)" DestinationFolder="$(ExportFolder)config" />
+    <Copy SourceFiles="@(DataDlls)" DestinationFolder="$(ExportFolder)data" />
+    <Copy SourceFiles="@(DataFiles)" DestinationFolder="$(ExportFolder)data\$(BepInExPluginName)" />
+    <Copy SourceFiles="@(Keybindings)" DestinationFolder="$(ExportFolder)keybindings" />
+    <Copy SourceFiles="@(Levels)" DestinationFolder="$(ExportFolder)levels\$(BepInExPluginName)" />
+    <Copy SourceFiles="@(Localization)" DestinationFolder="$(ExportFolder)localization" />
+    <ZipDirectory SourceDirectory="$(ExportFolder)" DestinationFile="$(ExportFolder)..\$(TargetName).zip" Overwrite="true"/>
     
   </Target>
   

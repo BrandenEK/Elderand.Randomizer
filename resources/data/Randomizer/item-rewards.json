@@ -61,7 +61,7 @@
 	},
 	{
 		"id": "Crafting02",
-		"name": "Elderanian Ingot",
+		"name": "Elderandian Ingot",
 		"count": 1
 	},
 	{
@@ -102,6 +102,77 @@
 	{
 		"id": "Axe",
 		"name": "Axe",
+		"count": 1
+	},
+	
+	{
+		"id": "Relic01",
+		"name": "Nyeth's Feather",
+		"count": 1
+	},
+	{
+		"id": "Relic02",
+		"name": "The Legacy of Virtue",
+		"count": 1
+	},
+	{
+		"id": "Relic03",
+		"name": "Magical Catalyst",
+		"count": 1
+	},
+	{
+		"id": "Relic04",
+		"name": "Jewel of Renewed Will",
+		"count": 1
+	},
+	{
+		"id": "Relic05",
+		"name": "The Breaker",
+		"count": 1
+	},
+	{
+		"id": "Relic06",
+		"name": "Tauta'ti",
+		"count": 1
+	},
+	{
+		"id": "Relic07",
+		"name": "Last Hook",
+		"count": 1
+	},
+	{
+		"id": "Relic08",
+		"name": "Fragment of Haduk'malaar",
+		"count": 1
+	},
+	{
+		"id": "Relic09",
+		"name": "Glimpse of the Titan",
+		"count": 1
+	},
+	{
+		"id": "Relic10",
+		"name": "Battle Saddlebags",
+		"count": 1
+	},
+	{
+		"id": "Relic11",
+		"name": "Facility Bag",
+		"count": 1
+	},
+	{
+		"id": "Relic12",
+		"name": "Challenger's Key",
+		"count": 1
+	},
+	{
+		"id": "Relic13",
+		"name": "Legendary Hero's Key",
+		"count": 1
+	},
+	{
+		"id": "Relic14",
+		"name": "Gladiator's Key",
 		"count": 1
 	},
 ]
