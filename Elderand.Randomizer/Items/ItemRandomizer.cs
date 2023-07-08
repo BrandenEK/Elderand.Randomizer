@@ -8,55 +8,19 @@ namespace Elderand.Randomizer.Items
 {
     public class ItemRandomizer : Manager
     {
-        private readonly Dictionary<string, ItemData> _itemObjects = new();
-
-        public override void Initialize()
-        {
-            LoadObjects();
-        }
+        
 
         public override void LevelLoaded(string name)
         {
+            Main.LogError("Sword: " + Main.Data.GetItemLocationData("Drop_Light-Sword").originalItem);
         }
 
-        public ItemData GetItemByName(string name)
-        {
-            if (_itemObjects.TryGetValue(name, out ItemData item))
-                return item;
-
-            throw new System.ArgumentException($"Item '{name}' does not exist");
-        }
 
         public ItemData GetRandomItem()
         {
-            return GetItemByName(items[Random.RandomRangeInt(0, items.Length)]);
+            return Main.Data.GetItemByName(items[Random.RandomRangeInt(0, items.Length)]);
         }
 
-        private void LoadObjects()
-        {
-            var itemList = AssetManager.LoadAssetsFromKeySync<ItemData>("Item");
-            _itemObjects.Clear();
-
-            foreach (ItemData item in itemList.Keys)
-            {
-                //Main.Log(item.ItemName + ": " + item.GetType().ToString());
-                string itemId;
-
-                if (item.ItemName == null)
-                {
-                    if (item is OrbItemData orb)
-                        itemId = orb.OrbType.ToString() + "Orb";
-                    else
-                        itemId = "Unknown";
-                }
-                else
-                {
-                    itemId = item.ItemName;
-                }
-
-                _itemObjects[itemId] = item;
-            }
-        }
 
         private Dictionary<string, string> tempItemMapping = new()
         {

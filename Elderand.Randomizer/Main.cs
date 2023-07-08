@@ -10,13 +10,15 @@ namespace Elderand.Randomizer
     [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     public class Main : BaseUnityPlugin
     {
-        private static readonly Manager[] _managers = new Manager[2]
+        private static readonly Manager[] _managers = new Manager[]
         {
             new ItemRandomizer(),
             new Debugger(),
+            new DataLoader(),
         };
         public static ItemRandomizer ItemRandomizer => _managers[0] as ItemRandomizer;
         public static Debugger Debugger => _managers[1] as Debugger;
+        public static DataLoader Data => _managers[2] as DataLoader;
 
         private static Main _instance;
 

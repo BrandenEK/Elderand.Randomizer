@@ -207,6 +207,9 @@
     <Reference Include="Elderand.UIElements">
       <HintPath>..\lib\Elderand.UIElements.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="ParadoxNotion">
       <HintPath>..\lib\ParadoxNotion.dll</HintPath>
     </Reference>

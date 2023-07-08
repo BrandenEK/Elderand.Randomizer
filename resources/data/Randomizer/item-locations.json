@@ -1,0 +1,15 @@
+[
+	{
+		"id": "Drop_Light-Sword",
+		"name": "Initial beachside",
+		"type": "Normal",
+		"originalItem": "Light Sword",
+	},
+	{
+		"id": "Chest_Cave-25-01",
+		"name": "Waterfall chest",
+		"type": "Normal",
+		"originalItem": "Torturer's Embrace",
+		"logic": "hook"
+	},
+]

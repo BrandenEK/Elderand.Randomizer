@@ -21,7 +21,7 @@ namespace Elderand.Randomizer.Items
             {
                 new ItemDropValue()
                 {
-                    item = Main.ItemRandomizer.GetItemByName("Large Healing Potion"),
+                    item = Main.Data.GetItemByName("Large Healing Potion"),
                     amount = 1
                 }
             });
@@ -40,7 +40,7 @@ namespace Elderand.Randomizer.Items
             string locationId = "Drop_" + __instance.Item.ItemName.ToString().Replace(" ", "_");
             Main.Log("Location id for drop item: " + locationId);
 
-            __instance.SetItem(Main.ItemRandomizer.GetItemByName("Large Mana Potion"), 1);
+            __instance.SetItem(Main.Data.GetItemByName("Large Mana Potion"), 1);
         }
     }
 
