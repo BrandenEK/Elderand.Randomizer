@@ -1,9 +1,94 @@
 [
 	{
 		"id": "Drop_Light-Sword",
-		"name": "Initial beachside",
+		"name": "Beachside sword",
 		"type": "Normal",
 		"originalItem": "Light Sword",
+	},
+	{
+		"id": "Chest_Cave-38-01",
+		"name": "Beginnning sword",
+		"type": "Normal",
+		"originalItem": "Common Bow",
+	},
+	{
+		"id": "Drop_Fool's-Letter",
+		"name": "Beginning note",
+		"type": "Note",
+		"originalItem": "Fool's Letter",
+	},
+	{
+		"id": "Chest_Cave-03-01",
+		"name": "High chest",
+		"type": "Normal",
+		"originalItem": "Iron Ingot",
+		"logic": "feather"
+	},
+	{
+		"id": "Chest_Cave-05-01",
+		"name": "Small potion chest",
+		"type": "Normal",
+		"originalItem": "Small Healing Potion",
+	},
+	{
+		"id": "Chest_Cave-05-02",
+		"name": "Axe chest",
+		"type": "Normal",
+		"originalItem": "Axe",
+	},
+	{
+		"id": "Drop_Observer's-Notes-#1",
+		"name": "Upper note",
+		"type": "Note",
+		"originalItem": "Observer's Notes #1",
+	},
+	{
+		"id": "Chest_Cave-16-01",
+		"name": "Shield chest",
+		"type": "Normal",
+		"originalItem": "Wooden Buckler",
+	},
+	{
+		"id": "Chest_Cave-07-01",
+		"name": "Big potion chest",
+		"type": "Normal",
+		"originalItem": "Small Mana Potion",
+	},
+	{
+		"id": "Chest_Cave-06-01",
+		"name": "Shortcut chest",
+		"type": "Normal",
+		"originalItem": "ManaOrb",
+	},
+	{
+		"id": "Chest_Cave-08-01",
+		"name": "Staff chest",
+		"type": "Normal",
+		"originalItem": "Charmed Staff",
+	},
+	{
+		"id": "Drop_Observer's-Notes-#2",
+		"name": "Caverns entrance note",
+		"type": "Note",
+		"originalItem": "Observer's Notes #2",
+	},
+	{
+		"id": "Chest_Cave-09-01",
+		"name": "Caverns entrance chest",
+		"type": "Normal",
+		"originalItem": "StaminaOrb",
+	},
+	{
+		"id": "Chest_Cave-10-01",
+		"name": "Caverns lower chest",
+		"type": "Normal",
+		"originalItem": "HealthOrb",
+	},
+	{
+		"id": "Drop_Observer's-Notes-#3",
+		"name": "Caverns lower note",
+		"type": "Note",
+		"originalItem": "Observer's Notes #3",
 	},
 	{
 		"id": "Chest_Cave-25-01",
@@ -11,5 +96,38 @@
 		"type": "Normal",
 		"originalItem": "Torturer's Embrace",
 		"logic": "hook"
+	},
+	{
+		"id": "Chest_Cave-16-02",
+		"name": "Super high chest",
+		"type": "Normal",
+		"originalItem": "Elderanian Ingot",
+		"logic": "feather && virtue"
+	},
+	{
+		"id": "Chest_Cave-41-01",
+		"name": "Dagger chest",
+		"type": "Normal",
+		"originalItem": "Rattlesnake",
+		"logic": "hook"
+	},
+	{
+		"id": "Chest_Cave-41-02",
+		"name": "Above dagger chest",
+		"type": "Normal",
+		"originalItem": "Gunpowder",
+		"logic": "hook"
+	},
+	{
+		"id": "Chest_Cave-20-01",
+		"name": "Forest entrance chest",
+		"type": "Normal",
+		"originalItem": "Iron Ingot",
+	},
+	{
+		"id": "Chest_Cave-19-01",
+		"name": "Switch puzzle",
+		"type": "Normal",
+		"originalItem": "Forest Coat",
 	},
 ]

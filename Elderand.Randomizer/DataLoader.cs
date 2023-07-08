@@ -14,9 +14,9 @@ namespace Elderand.Randomizer
 
         public override void Initialize()
         {
-            LoadObjects();
             LoadItemLocations();
             LoadItemRewards();
+            LoadObjects();
         }
 
 
@@ -44,6 +44,9 @@ namespace Elderand.Randomizer
 
 
         private readonly Dictionary<string, ItemReward> _itemRewards = new();
+        public Dictionary<string, ItemReward> AllItemRewards => _itemRewards;
+
+        public ItemReward GetItemRewardData(string rewardId) => _itemRewards[rewardId];
 
         private void LoadItemRewards()
         {
@@ -55,22 +58,18 @@ namespace Elderand.Randomizer
             Main.Log($"Loaded {_itemRewards.Count} item rewards!");
         }
 
-        public List<string> AllItemRewards => new(_itemRewards.Keys);
-
-        public ItemReward GetItemRewardData(string rewardId) => _itemRewards[rewardId];
-
 
         // Load all item objects from assetmanager
 
 
         private readonly Dictionary<string, ItemData> _itemObjects = new();
 
-        public ItemData GetItemByName(string name)
+        public ItemData GetItemObject(string id)
         {
-            if (_itemObjects.TryGetValue(name, out ItemData item))
+            if (_itemObjects.TryGetValue(id, out ItemData item))
                 return item;
 
-            throw new System.ArgumentException($"Item '{name}' does not exist");
+            throw new System.ArgumentException($"Item '{id}' does not exist");
         }
 
         private void LoadObjects()
@@ -86,14 +85,31 @@ namespace Elderand.Randomizer
                     if (item is OrbItemData orb)
                         itemId = orb.OrbType.ToString() + "Orb";
                     else
-                        itemId = "Unknown";
+                        throw new System.Exception("Item does not have a valid name");
                 }
                 else
                 {
-                    itemId = item.ItemName;
+                    itemId = GetItemIdFromName(item.ItemName);
+                    if (itemId == null)
+                        continue;
                 }
 
                 _itemObjects[itemId] = item;
+            }
+
+            Main.LogWarning("Loaded objects");
+            foreach (string itemId in _itemObjects.Keys)
+                Main.LogWarning(itemId + ": " + _itemObjects[itemId].ItemName);
+
+            string GetItemIdFromName(string itemName)
+            {
+                foreach (ItemReward item in _itemRewards.Values)
+                {
+                    if (item.name == itemName)
+                        return item.id;
+                }
+
+                return null;
             }
         }
 

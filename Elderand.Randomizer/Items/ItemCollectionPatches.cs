@@ -1,6 +1,7 @@
 ﻿using Elderand.Data;
 using Elderand.NodeCanvas.SceneObjects;
 using Elderand.Player;
+using Elderand.Randomizer.Extensions;
 using Elderand.SceneObjects;
 using HarmonyLib;
 using System.Collections.Generic;
@@ -14,14 +15,15 @@ namespace Elderand.Randomizer.Items
     {
         public static void Postfix(GetChestDrop __instance)
         {
-            string locationId = "Chest_" + __instance.agent.ChestData.name.Replace(" ", "_");
+            string locationId = __instance.GetLocationId();
+            ItemReward item = Main.ItemRandomizer.GetItemAtLocation(locationId);
             Main.Log("Location id for chest: " + locationId);
 
             DropValueData drop = new(new List<ItemDropValue>()
             {
                 new ItemDropValue()
                 {
-                    item = Main.Data.GetItemByName("Large Healing Potion"),
+                    item = Main.Data.GetItemObject(item == null ? "Potion01" : item.id),
                     amount = 1
                 }
             });
@@ -37,10 +39,11 @@ namespace Elderand.Randomizer.Items
         {
             if (__instance.Item == null || ___wasSpawned) return;
 
-            string locationId = "Drop_" + __instance.Item.ItemName.ToString().Replace(" ", "_");
+            string locationId = __instance.GetLocationId();
+            ItemReward item = Main.ItemRandomizer.GetItemAtLocation(locationId);
             Main.Log("Location id for drop item: " + locationId);
 
-            __instance.SetItem(Main.Data.GetItemByName("Large Mana Potion"), 1);
+            __instance.SetItem(Main.Data.GetItemObject(item == null ? "Potion01" : item.id), 1);
         }
     }
 

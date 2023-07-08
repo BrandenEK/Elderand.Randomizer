@@ -1,12 +1,107 @@
 [
 	{
-		"id": "Weapon01",
+		"id": "Sword01",
 		"name": "Light Sword",
 		"count": 1
 	},
 	{
 		"id": "Armor01",
 		"name": "Torturer's Embrace",
+		"count": 1
+	},
+	{
+		"id": "Bow01",
+		"name": "Common Bow",
+		"count": 1
+	},
+	{
+		"id": "Shield01",
+		"name": "Wooden Buckler",
+		"count": 1
+	},
+	{
+		"id": "Armor02",
+		"name": "Forest Coat",
+		"count": 1
+	},
+	{
+		"id": "Staff01",
+		"name": "Charmed Staff",
+		"count": 1
+	},
+	{
+		"id": "Sword02",
+		"name": "Rattlesnake",
+		"count": 1
+	},
+	{
+		"id": "HealthOrb",
+		"name": "HP+ Orb",
+		"count": 1
+	},
+	{
+		"id": "ManaOrb",
+		"name": "MP+ Orb",
+		"count": 1
+	},
+	{
+		"id": "StaminaOrb",
+		"name": "SP+ Orb",
+		"count": 1
+	},
+	{
+		"id": "Crafting01",
+		"name": "Iron Ingot",
+		"count": 1
+	},
+	{
+		"id": "Crafting04",
+		"name": "Steel Ingot",
+		"count": 1
+	},
+	{
+		"id": "Crafting02",
+		"name": "Elderanian Ingot",
+		"count": 1
+	},
+	{
+		"id": "Crafting03",
+		"name": "Gunpowder",
+		"count": 1
+	},
+	{
+		"id": "Note01",
+		"name": "Fool's Letter",
+		"count": 1
+	},
+	{
+		"id": "Note02",
+		"name": "Observer's Notes #1",
+		"count": 1
+	},
+	{
+		"id": "Note03",
+		"name": "Observer's Notes #2",
+		"count": 1
+	},
+	{
+		"id": "Note04",
+		"name": "Observer's Notes #3",
+		"count": 1
+	},
+	{
+		"id": "Potion01",
+		"name": "Small Healing Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion02",
+		"name": "Small Mana Potion",
+		"count": 1
+	},
+	{
+		"id": "Axe",
+		"name": "Axe",
 		"count": 1
 	},
 ]

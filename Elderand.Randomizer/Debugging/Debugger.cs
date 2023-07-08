@@ -34,12 +34,12 @@ namespace Elderand.Randomizer.Debugging
                 foreach (var relic in PlayerReference.Inventory.GetAllRelics())
                     PlayerReference.Inventory.AddItem(relic, 1);
 
-                PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Gurom'karah"), 1);
-                PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Nyeth's Feather"), 1);
-                PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Jewel of Renewed Will"), 1);
-                PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Magical Catalyst"), 1);
-                PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Last Hook"), 1);
-                PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("The Legacy of Virtue"), 1);
+                //PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Gurom'karah"), 1);
+                //PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Nyeth's Feather"), 1);
+                //PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Jewel of Renewed Will"), 1);
+                //PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Magical Catalyst"), 1);
+                //PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("Last Hook"), 1);
+                //PlayerReference.Inventory.AddItem(Main.Data.GetItemByName("The Legacy of Virtue"), 1);
 
                 for (int i = 0; i < 30; i++)
                 {
