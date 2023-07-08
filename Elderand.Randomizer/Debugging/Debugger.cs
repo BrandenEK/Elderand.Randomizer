@@ -40,6 +40,12 @@ namespace Elderand.Randomizer.Debugging
                 PlayerReference.Inventory.AddItem(Main.ItemRandomizer.GetItemByName("Magical Catalyst"), 1);
                 PlayerReference.Inventory.AddItem(Main.ItemRandomizer.GetItemByName("Last Hook"), 1);
                 PlayerReference.Inventory.AddItem(Main.ItemRandomizer.GetItemByName("The Legacy of Virtue"), 1);
+
+                for (int i = 0; i < 30; i++)
+                {
+                    PlayerReference.Attributes.AddAttribute(Data.BaseAttribute.Vitality);
+                    PlayerReference.Attributes.AddAttribute(Data.BaseAttribute.Strength);
+                }
             }
             else if (keyboard.numpad6Key.wasPressedThisFrame)
             {

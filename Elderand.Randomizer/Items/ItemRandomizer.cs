@@ -17,27 +17,6 @@ namespace Elderand.Randomizer.Items
 
         public override void LevelLoaded(string name)
         {
-            //foreach (DropItem drop in Object.FindObjectsOfType<DropItem>())
-            //{
-            //    string locationId = "Drop_" + drop.Item.ItemName.ToString().Replace(" ", "_");
-            //    Main.LogWarning("Location id for drop: " + locationId);
-
-            //    StoreItemAtLocation(locationId);
-            //    if (CurrentRandomizedItem != null)
-            //        drop.SetItem(CurrentRandomizedItem, 1);
-            //}
-        }
-
-        public void StoreItemAtLocation(string locationId)
-        {
-            if (tempItemMapping.TryGetValue(locationId, out string itemName))
-            {
-                CurrentRandomizedItem = GetItemByName(itemName);
-            }
-            else
-            {
-                CurrentRandomizedItem = null;
-            }
         }
 
         public ItemData GetItemByName(string name)
@@ -46,6 +25,11 @@ namespace Elderand.Randomizer.Items
                 return item;
 
             throw new System.ArgumentException($"Item '{name}' does not exist");
+        }
+
+        public ItemData GetRandomItem()
+        {
+            return GetItemByName(items[Random.RandomRangeInt(0, items.Length)]);
         }
 
         private void LoadObjects()
@@ -85,7 +69,16 @@ namespace Elderand.Randomizer.Items
             //{ "Cave_16_Chest_01", "Last Hook" },
         };
 
-        public ItemData CurrentRandomizedItem { get; private set; }
+        string[] items = new string[]
+        {
+            "Gurom'karah",
+            "The Interior",
+            "Lasher's Whip",
+            "HealthOrb",
+            "Crimson Jewel Buckler",
+            "Nyeth's Feather",
+            "Last Hook",
+        };
 
         // Save keys for stuff
         // Add more location/item ids
