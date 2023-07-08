@@ -76,13 +76,13 @@ namespace Elderand.Randomizer.Items
 
         private Dictionary<string, string> tempItemMapping = new()
         {
-            { "Drop_Light_Sword", "Gurom'karah" },
-            { "Cave_38_Chest_01", "The Interior" },
-            { "Drop_Fool's_Letter", "Lasher's Whip" },
-            { "Cave_05_Chest_01", "HealthOrb" },
-            { "Drop_Observer's_Notes_#1", "Crimson Jewel Buckler" },
-            { "Cave_05_Chest_02", "Nyeth's Feather" },
-            { "Cave_16_Chest_01", "Last Hook" },
+            //{ "Drop_Light_Sword", "Gurom'karah" },
+            //{ "Cave_38_Chest_01", "The Interior" },
+            //{ "Drop_Fool's_Letter", "Lasher's Whip" },
+            //{ "Cave_05_Chest_01", "HealthOrb" },
+            //{ "Drop_Observer's_Notes_#1", "Crimson Jewel Buckler" },
+            //{ "Cave_05_Chest_02", "Nyeth's Feather" },
+            //{ "Cave_16_Chest_01", "Last Hook" },
         };
 
         public ItemData CurrentRandomizedItem { get; private set; }
