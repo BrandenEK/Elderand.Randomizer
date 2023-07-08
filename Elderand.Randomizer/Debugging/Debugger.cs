@@ -1,4 +1,5 @@
-﻿using Elderand.Player;
+﻿using Elderand.Level;
+using Elderand.Player;
 using Elderand.Player.References;
 using System.Collections.Generic;
 using UnityEngine;
@@ -39,6 +40,10 @@ namespace Elderand.Randomizer.Debugging
                 PlayerReference.Inventory.AddItem(Main.ItemRandomizer.GetItemByName("Magical Catalyst"), 1);
                 PlayerReference.Inventory.AddItem(Main.ItemRandomizer.GetItemByName("Last Hook"), 1);
                 PlayerReference.Inventory.AddItem(Main.ItemRandomizer.GetItemByName("The Legacy of Virtue"), 1);
+            }
+            else if (keyboard.numpad6Key.wasPressedThisFrame)
+            {
+                LevelManager.LoadRoomAsyncAtSpecialPoint(new SlotIndex(-21, -3), ReferenceType.SavePoint);
             }
         }
 

@@ -17,15 +17,15 @@ namespace Elderand.Randomizer.Items
 
         public override void LevelLoaded(string name)
         {
-            foreach (DropItem drop in Object.FindObjectsOfType<DropItem>())
-            {
-                string locationId = "Drop_" + drop.Item.ItemName.ToString().Replace(" ", "_");
-                Main.LogWarning("Location id for drop: " + locationId);
+            //foreach (DropItem drop in Object.FindObjectsOfType<DropItem>())
+            //{
+            //    string locationId = "Drop_" + drop.Item.ItemName.ToString().Replace(" ", "_");
+            //    Main.LogWarning("Location id for drop: " + locationId);
 
-                StoreItemAtLocation(locationId);
-                if (CurrentRandomizedItem != null)
-                    drop.SetItem(CurrentRandomizedItem, 1);
-            }
+            //    StoreItemAtLocation(locationId);
+            //    if (CurrentRandomizedItem != null)
+            //        drop.SetItem(CurrentRandomizedItem, 1);
+            //}
         }
 
         public void StoreItemAtLocation(string locationId)

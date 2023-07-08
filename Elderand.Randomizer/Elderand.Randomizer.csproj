@@ -84,6 +84,66 @@
     <Reference Include="Elderand.Level">
       <HintPath>..\lib\Elderand.Level.dll</HintPath>
     </Reference>
+    <Reference Include="Elderand.NodeCanvas.AI">
+      <HintPath>..\lib\Elderand.NodeCanvas.AI.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.AI.Enemy">
+      <HintPath>..\lib\Elderand.NodeCanvas.AI.Enemy.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.AI.Init">
+      <HintPath>..\lib\Elderand.NodeCanvas.AI.Init.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Analyzers">
+      <HintPath>..\lib\Elderand.NodeCanvas.Analyzers.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Audio">
+      <HintPath>..\lib\Elderand.NodeCanvas.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Bind">
+      <HintPath>..\lib\Elderand.NodeCanvas.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Cutscene">
+      <HintPath>..\lib\Elderand.NodeCanvas.Cutscene.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Effects">
+      <HintPath>..\lib\Elderand.NodeCanvas.Effects.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Events">
+      <HintPath>..\lib\Elderand.NodeCanvas.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.GameController">
+      <HintPath>..\lib\Elderand.NodeCanvas.GameController.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Instantiate">
+      <HintPath>..\lib\Elderand.NodeCanvas.Instantiate.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Paths">
+      <HintPath>..\lib\Elderand.NodeCanvas.Paths.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Persistence">
+      <HintPath>..\lib\Elderand.NodeCanvas.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Player">
+      <HintPath>..\lib\Elderand.NodeCanvas.Player.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Projectiles">
+      <HintPath>..\lib\Elderand.NodeCanvas.Projectiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Rituals">
+      <HintPath>..\lib\Elderand.NodeCanvas.Rituals.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.SceneObjects">
+      <HintPath>..\lib\Elderand.NodeCanvas.SceneObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.UI">
+      <HintPath>..\lib\Elderand.NodeCanvas.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.NodeCanvas.Unity">
+      <HintPath>..\lib\Elderand.NodeCanvas.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.ObjectPooling">
+      <HintPath>..\lib\Elderand.ObjectPooling.dll</HintPath>
+    </Reference>
     <Reference Include="Elderand.Paths">
       <HintPath>..\lib\Elderand.Paths.dll</HintPath>
     </Reference>
@@ -114,14 +174,50 @@
     <Reference Include="Elderand.SkillEffects">
       <HintPath>..\lib\Elderand.SkillEffects.dll</HintPath>
     </Reference>
+    <Reference Include="Elderand.Timeline.Dialogue">
+      <HintPath>..\lib\Elderand.Timeline.Dialogue.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.GameEventInvoker">
+      <HintPath>..\lib\Elderand.Timeline.GameEventInvoker.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.InputWeight">
+      <HintPath>..\lib\Elderand.Timeline.InputWeight.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.PathFollow">
+      <HintPath>..\lib\Elderand.Timeline.PathFollow.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.Player">
+      <HintPath>..\lib\Elderand.Timeline.Player.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.PlayerPuppet">
+      <HintPath>..\lib\Elderand.Timeline.PlayerPuppet.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.Shake">
+      <HintPath>..\lib\Elderand.Timeline.Shake.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.Timeline.TextControl">
+      <HintPath>..\lib\Elderand.Timeline.TextControl.dll</HintPath>
+    </Reference>
     <Reference Include="Elderand.UI">
       <HintPath>..\lib\Elderand.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.UI.Gameplay">
+      <HintPath>..\lib\Elderand.UI.Gameplay.dll</HintPath>
+    </Reference>
+    <Reference Include="Elderand.UIElements">
+      <HintPath>..\lib\Elderand.UIElements.dll</HintPath>
+    </Reference>
+    <Reference Include="ParadoxNotion">
+      <HintPath>..\lib\ParadoxNotion.dll</HintPath>
     </Reference>
     <Reference Include="Plugins.I2Localization">
       <HintPath>..\lib\Plugins.I2Localization.dll</HintPath>
     </Reference>
     <Reference Include="Sirenix.Serialization">
       <HintPath>..\lib\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\lib\UniTask.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
       <HintPath>..\lib\Unity.InputSystem.dll</HintPath>

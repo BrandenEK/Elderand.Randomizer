@@ -54,7 +54,7 @@ namespace Elderand.Randomizer
 
         private void OnLevelLoaded(Room room, DoorDirection direction)
         {
-            LogWarning("Level loaded: " + room.name);
+            LogWarning($"Level loaded: {room.name} ({LevelManager.CurrentIndex})");
             foreach (Manager manager in _managers)
                 manager.LevelLoaded(room.name);
         }
