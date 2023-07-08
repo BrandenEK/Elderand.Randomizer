@@ -1,5 +1,6 @@
 ﻿using Elderand.Data;
 using Elderand.NodeCanvas.SceneObjects;
+using Elderand.Player;
 using Elderand.SceneObjects;
 using HarmonyLib;
 using System.Collections.Generic;
@@ -40,6 +41,16 @@ namespace Elderand.Randomizer.Items
             Main.Log("Location id for drop item: " + locationId);
 
             __instance.SetItem(Main.ItemRandomizer.GetItemByName("Large Mana Potion"), 1);
+        }
+    }
+
+    // Make items always dissapear when collected, even if at max
+    [HarmonyPatch(typeof(PlayerController), "AddItem")]
+    class Player_Item_Patch
+    {
+        public static void Postfix(ref bool __result)
+        {
+            __result = true;
         }
     }
 }
