@@ -1,5 +1,6 @@
 ﻿using Elderand.AssetManagement;
 using Elderand.Data;
+using Elderand.Randomizer.Extensions;
 using Elderand.SceneObjects;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,12 +21,6 @@ namespace Elderand.Randomizer.Items
             
         }
 
-
-        //public ItemData GetRandomItem()
-        //{
-        //    return Main.Data.GetItemByName(items[Random.RandomRangeInt(0, items.Length)]);
-        //}
-
         public ItemReward GetItemAtLocation(string locationId)
         {
             if (_mappedItems == null || !_mappedItems.ContainsKey(locationId))
@@ -45,11 +40,12 @@ namespace Elderand.Randomizer.Items
             //    throw new System.Exception("Item list and location list are different sizes");
 
             System.Random rng = new();
+            itemIds.Shuffle(rng);
 
             while (locationIds.Count > 0)
             {
-                int itemIdx = itemIds.Count - 1;
-                int locationIdx = rng.Next(locationIds.Count);
+                int itemIdx = itemIds.GetLastIndex();
+                int locationIdx = locationIds.GetRandomIndex(rng);
 
                 Main.Log(locationIds[locationIdx] + ": " + itemIds[itemIdx]);
                 _mappedItems.Add(locationIds[locationIdx], itemIds[itemIdx]);
@@ -59,17 +55,6 @@ namespace Elderand.Randomizer.Items
 
             Main.LogWarning("Shuffled all items and locations");
         }
-
-        string[] items = new string[]
-        {
-            "Gurom'karah",
-            "The Interior",
-            "Lasher's Whip",
-            "HealthOrb",
-            "Crimson Jewel Buckler",
-            "Nyeth's Feather",
-            "Last Hook",
-        };
 
         // Save keys for stuff
         // Add more location/item ids
