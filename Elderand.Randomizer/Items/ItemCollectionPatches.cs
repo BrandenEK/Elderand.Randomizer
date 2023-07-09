@@ -17,7 +17,6 @@ namespace Elderand.Randomizer.Items
         {
             string locationId = __instance.GetLocationId();
             ItemReward item = Main.ItemRandomizer.GetItemAtLocation(locationId);
-            Main.Log("Location id for chest: " + locationId);
 
             if (item != null)
             {
@@ -32,6 +31,8 @@ namespace Elderand.Randomizer.Items
                 });
                 __instance.outDrop.value = drop;
             }
+
+            Main.Log($"Replacing '{locationId}' with '{(item == null ? "Default" : item.id)}'");
         }
     }
 
@@ -45,13 +46,14 @@ namespace Elderand.Randomizer.Items
 
             string locationId = __instance.GetLocationId();
             ItemReward item = Main.ItemRandomizer.GetItemAtLocation(locationId);
-            Main.Log("Location id for drop item: " + locationId);
 
             if (item != null)
             {
                 // If there is a random item at this location
                 __instance.SetItem(Main.Data.GetItemObject(item.id), 1);
             }
+
+            Main.Log($"Replacing '{locationId}' with '{(item == null ? "Default" : item.id)}'");
         }
     }
 

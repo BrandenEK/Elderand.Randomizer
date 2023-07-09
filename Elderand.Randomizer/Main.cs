@@ -3,6 +3,7 @@ using Elderand.Level;
 using Elderand.Randomizer.Debugging;
 using Elderand.Randomizer.Items;
 using HarmonyLib;
+using System.Text;
 using UnityEngine.SceneManagement;
 
 namespace Elderand.Randomizer
@@ -56,9 +57,7 @@ namespace Elderand.Randomizer
 
         private void OnLevelLoaded(Room room, DoorDirection direction)
         {
-            Log("");
-            Log($"Loaded level: {room.name} ({LevelManager.CurrentIndex})");
-            Log("");
+            DisplayNewLevel(room.name, LevelManager.CurrentIndex);
 
             foreach (Manager manager in _managers)
                 manager.LevelLoaded(room.name);
@@ -71,6 +70,25 @@ namespace Elderand.Randomizer
                 Initialize();
                 SceneManager.sceneLoaded -= OnSceneLoaded;
             }
+        }
+
+        private void DisplayNewLevel(string name, SlotIndex index)
+        {
+            // Create message
+            string message = $"Loaded level: {name} ({index})";
+            StringBuilder sb = new();
+
+            // Create line text
+            for (int i = 0; i < message.Length; i++)
+                sb.Append('=');
+            string line = sb.ToString();
+
+            // Display message
+            Log(string.Empty);
+            Log(line);
+            Log(message);
+            Log(line);
+            Log(string.Empty);
         }
     }
 }
