@@ -5,108 +5,410 @@
 		"count": 1
 	},
 	{
+		"id": "Sword02",
+		"name": "Razshah, the Only",
+		"count": 1
+	},
+	{
 		"id": "Sword03",
+		"name": "Lightbringer",
+		"count": 1
+	},
+	{
+		"id": "Sword04",
+		"name": "Traitor's Blade",
+		"count": 1
+	},
+	{
+		"id": "Sword05",
+		"name": "Steel Sword",
+		"count": 1
+	},
+	{
+		"id": "Sword06",
+		"name": "Elui'ator",
+		"count": 1
+	},
+	{
+		"id": "Sword07",
+		"name": "Large Sword",
+		"count": 1
+	},
+	{
+		"id": "Sword08",
 		"name": "Gurom'karah",
 		"count": 1
 	},
 	{
-		"id": "Armor01",
-		"name": "Torturer's Embrace",
+		"id": "Sword09",
+		"name": "Gran'jur, the First",
 		"count": 1
 	},
+	{
+		"id": "Sword10",
+		"name": "Rustaar, the Veteran",
+		"count": 1
+	},
+	{
+		"id": "Sword11",
+		"name": "Geodana",
+		"count": 1
+	},
+	{
+		"id": "Sword12",
+		"name": "Serr, the Patient",
+		"count": 1
+	},
+	{
+		"id": "Sword13",
+		"name": "Getzansu, the Skycutter",
+		"count": 1
+	},
+	{
+		"id": "Sword14",
+		"name": "Barrun'gar",
+		"count": 1
+	},
+	{
+		"id": "Sword15",
+		"name": "Head-Slicer",
+		"count": 1
+	},
+	
+	{
+		"id": "Dagger01",
+		"name": "Rattlesnake",
+		"count": 1
+	},
+	{
+		"id": "Dagger02",
+		"name": "Tetoc'piex",
+		"count": 1
+	},
+	{
+		"id": "Dagger03",
+		"name": "Blade of the Eternal Wound",
+		"count": 1
+	},
+	
+	{
+		"id": "Whip01",
+		"name": "Kor'ydal, the Serpent",
+		"count": 1
+	},
+	{
+		"id": "Whip02",
+		"name": "Studded Whip",
+		"count": 1
+	},
+	{
+		"id": "Whip03",
+		"name": "Lasher's Whip",
+		"count": 1
+	},
+	
 	{
 		"id": "Bow01",
 		"name": "Common Bow",
 		"count": 1
 	},
 	{
-		"id": "Shield01",
-		"name": "Wooden Buckler",
+		"id": "Bow02",
+		"name": "Cursed Bow",
 		"count": 1
 	},
 	{
-		"id": "Armor02",
-		"name": "Forest Coat",
+		"id": "Bow03",
+		"name": "Auvit'evit",
 		"count": 1
 	},
+	{
+		"id": "Bow04",
+		"name": "Kozin, the Laminarium",
+		"count": 1
+	},
+	{
+		"id": "Bow05",
+		"name": "The Intrepid",
+		"count": 1
+	},
+	{
+		"id": "Bow06",
+		"name": "Wild Bow",
+		"count": 1
+	},
+	{
+		"id": "Bow07",
+		"name": "Zinom, the Whistler",
+		"count": 1
+	},
+	
 	{
 		"id": "Staff01",
 		"name": "Charmed Staff",
 		"count": 1
 	},
 	{
-		"id": "Sword02",
-		"name": "Rattlesnake",
+		"id": "Staff02",
+		"name": "Confessional Staff",
 		"count": 1
 	},
 	{
-		"id": "HealthOrb",
-		"name": "HP+ Orb",
+		"id": "Staff03",
+		"name": "Manifest Staff",
 		"count": 1
 	},
 	{
-		"id": "ManaOrb",
-		"name": "MP+ Orb",
+		"id": "Staff04",
+		"name": "Roz'shoz, the Static Charge",
 		"count": 1
 	},
 	{
-		"id": "StaminaOrb",
-		"name": "SP+ Orb",
+		"id": "Staff05",
+		"name": "Toran's Staff",
 		"count": 1
 	},
 	{
-		"id": "Crafting01",
-		"name": "Iron Ingot",
+		"id": "Staff06",
+		"name": "Malefactor",
 		"count": 1
 	},
 	{
-		"id": "Crafting04",
-		"name": "Steel Ingot",
+		"id": "Staff07",
+		"name": "Lo'ganutar",
 		"count": 1
 	},
 	{
-		"id": "Crafting02",
-		"name": "Elderandian Ingot",
+		"id": "Staff08",
+		"name": "Crystal Staff",
 		"count": 1
 	},
 	{
-		"id": "Crafting03",
-		"name": "Gunpowder",
+		"id": "Staff09",
+		"name": "Basalt Stick",
+		"count": 1
+	},
+	
+	{
+		"id": "Shield01",
+		"name": "Wooden Buckler",
 		"count": 1
 	},
 	{
-		"id": "Note01",
-		"name": "Fool's Letter",
+		"id": "Shield02",
+		"name": "Sentinel's Buckler",
 		"count": 1
 	},
 	{
-		"id": "Note02",
-		"name": "Observer's Notes #1",
+		"id": "Shield03",
+		"name": "Metal Buckler",
 		"count": 1
 	},
 	{
-		"id": "Note03",
-		"name": "Observer's Notes #2",
+		"id": "Shield04",
+		"name": "Large Shield",
 		"count": 1
 	},
 	{
-		"id": "Note04",
-		"name": "Observer's Notes #3",
+		"id": "Shield05",
+		"name": "Notroz, the Sailors' Protector",
 		"count": 1
 	},
 	{
-		"id": "Potion01",
-		"name": "Small Healing Potion",
+		"id": "Shield06",
+		"name": "Cultist Shield",
 		"count": 1
 	},
 	{
-		"id": "Potion02",
-		"name": "Small Mana Potion",
+		"id": "Shield07",
+		"name": "Hir, the Huge Protector",
 		"count": 1
 	},
 	{
-		"id": "Axe",
-		"name": "Axe",
+		"id": "Shield08",
+		"name": "Fog'zot, the Impassable Infinite",
+		"count": 1
+	},
+	{
+		"id": "Shield09",
+		"name": "Unbreakable Zeal",
+		"count": 1
+	},
+	{
+		"id": "Shield10",
+		"name": "Crimson Jewel Buckler",
+		"count": 1
+	},
+	
+	{
+		"id": "Armor01",
+		"name": "Cultist's Cloak",
+		"count": 1
+	},
+	{
+		"id": "Armor02",
+		"name": "Traveler's Mantle",
+		"count": 1
+	},
+	{
+		"id": "Armor03",
+		"name": "Vizir's Hood",
+		"count": 1
+	},
+	{
+		"id": "Armor04",
+		"name": "Shadow Hood",
+		"count": 1
+	},
+	{
+		"id": "Armor05",
+		"name": "Combat Doublet",
+		"count": 1
+	},
+	{
+		"id": "Armor06",
+		"name": "Assassin's Garment",
+		"count": 1
+	},
+	{
+		"id": "Armor07",
+		"name": "Chainmail",
+		"count": 1
+	},
+	{
+		"id": "Armor08",
+		"name": "Trickster's Bale",
+		"count": 1
+	},
+	{
+		"id": "Armor09",
+		"name": "Fanatic's Guard",
+		"count": 1
+	},
+	{
+		"id": "Armor10",
+		"name": "Steel Protector",
+		"count": 1
+	},
+	{
+		"id": "Armor11",
+		"name": "Bone Fortress",
+		"count": 1
+	},
+	{
+		"id": "Armor12",
+		"name": "Torturer's Embrace",
+		"count": 1
+	},
+	{
+		"id": "Armor13",
+		"name": "Forest Coat",
+		"count": 1
+	},
+	{
+		"id": "Armor14",
+		"name": "Apprentice Cultist's Mantle",
+		"count": 1
+	},
+	
+	{
+		"id": "Ring01",
+		"name": "Novice Archer's Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring02",
+		"name": "Catalyst Sorcerer's Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring03",
+		"name": "Amethyst Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring04",
+		"name": "Glowing Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring05",
+		"name": "Ripper Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring06",
+		"name": "Corrupted Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring07",
+		"name": "Sumptuous Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring08",
+		"name": "Volatile Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring09",
+		"name": "Skillful Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring10",
+		"name": "Elderandian Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring11",
+		"name": "Golden Alliance",
+		"count": 1
+	},
+	{
+		"id": "Ring12",
+		"name": "Blood Alliance",
+		"count": 1
+	},
+	{
+		"id": "Ring13",
+		"name": "Unfair Alliance",
+		"count": 1
+	},
+	{
+		"id": "Ring14",
+		"name": "Death Alliance",
+		"count": 1
+	},
+	{
+		"id": "Ring15",
+		"name": "Heaven's Covenant",
+		"count": 1
+	},
+	{
+		"id": "Ring16",
+		"name": "Electric Capacitor",
+		"count": 1
+	},
+	{
+		"id": "Ring17",
+		"name": "Vengeance of Derak'don",
+		"count": 1
+	},
+	{
+		"id": "Ring18",
+		"name": "Exposing Ring",
+		"count": 1
+	},
+	{
+		"id": "Ring19",
+		"name": "Fool's Gambit",
+		"count": 1
+	},
+	{
+		"id": "Ring20",
+		"name": "Glimpse of Domination",
 		"count": 1
 	},
 	
@@ -147,7 +449,7 @@
 	},
 	{
 		"id": "Relic08",
-		"name": "Fragment of Haduk'malaar",
+		"name": "Fragment of Haduk'malaar, the Timeless Mirror",
 		"count": 1
 	},
 	{
@@ -178,6 +480,121 @@
 	{
 		"id": "Relic14",
 		"name": "Gladiator's Key",
+		"count": 1
+	},
+	
+	{
+		"id": "HealthOrb",
+		"name": "HP+ Orb",
+		"count": 1
+	},
+	{
+		"id": "ManaOrb",
+		"name": "MP+ Orb",
+		"count": 1
+	},
+	{
+		"id": "StaminaOrb",
+		"name": "SP+ Orb",
+		"count": 1
+	},
+	
+	{
+		"id": "Arrow01",
+		"name": "Wooden Arrow",
+		"count": 1
+	},
+	{
+		"id": "Arrow02",
+		"name": "Obsidian Arrow",
+		"count": 1
+	},
+	{
+		"id": "Arrow03",
+		"name": "Diamond Arrow",
+		"count": 1
+	},
+	{
+		"id": "Arrow04",
+		"name": "Elderandian Steel Arrow",
+		"count": 1
+	},
+	
+	{
+		"id": "Potion01",
+		"name": "Small Healing Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion02",
+		"name": "Large Healing Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion03",
+		"name": "Small Mana Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion04",
+		"name": "Large Mana Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion05",
+		"name": "Glimpse Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion06",
+		"name": "Might Potion",
+		"count": 1
+	},
+	{
+		"id": "Potion07",
+		"name": "Vigor Potion",
+		"count": 1
+	},
+	
+	{
+		"id": "Throwable01",
+		"name": "Axe",
+		"count": 1
+	},
+	{
+		"id": "Throwable02",
+		"name": "Knife",
+		"count": 1
+	},
+	{
+		"id": "Throwable03",
+		"name": "Bomb",
+		"count": 1
+	},
+	{
+		"id": "Throwable04",
+		"name": "Steel Chakram",
+		"count": 1
+	},
+	
+	{
+		"id": "Note01",
+		"name": "Fool's Letter",
+		"count": 1
+	},
+	{
+		"id": "Note02",
+		"name": "Observer's Notes #1",
+		"count": 1
+	},
+	{
+		"id": "Note03",
+		"name": "Observer's Notes #2",
+		"count": 1
+	},
+	{
+		"id": "Note04",
+		"name": "Observer's Notes #3",
 		"count": 1
 	},
 ]
