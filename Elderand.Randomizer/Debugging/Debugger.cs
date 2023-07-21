@@ -35,7 +35,10 @@ namespace Elderand.Randomizer.Debugging
                 PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Relic01"), 1);
                 PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Relic02"), 1);
                 PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Relic03"), 1);
+                PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Relic05"), 1);
                 PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Relic07"), 1);
+                PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Relic09"), 1);
+                PlayerReference.Inventory.AddItem(Main.Data.GetItemObject("Ring20"), 1);
 
                 for (int i = 0; i < 30; i++)
                 {

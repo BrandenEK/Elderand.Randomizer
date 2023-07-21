@@ -1,5 +1,7 @@
-﻿using Elderand.NodeCanvas.SceneObjects;
+﻿using Elderand.Level;
+using Elderand.NodeCanvas.SceneObjects;
 using Elderand.SceneObjects;
+using UnityEngine;
 
 namespace Elderand.Randomizer.Extensions
 {
@@ -13,7 +15,17 @@ namespace Elderand.Randomizer.Extensions
 
         public static string GetLocationId(this DropItem drop)
         {
-            return "Drop_" + drop.Item.ItemName.ToString().Replace(' ', '-');
+            int index = 1;
+            foreach (Transform child in drop.transform.parent)
+            {
+                if (child == drop.transform)
+                    break;
+                if (child.GetComponent<DropItem>())
+                    index++;
+            }
+
+            string room = LevelManager.CurrentRoomInfo.PrefabName.Replace(' ', '-');
+            return $"Drop_{room}-{index:00}";
         }
     }
 }

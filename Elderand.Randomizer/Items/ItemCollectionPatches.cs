@@ -32,15 +32,15 @@ namespace Elderand.Randomizer.Items
                 __instance.outDrop.value = drop;
             }
 
-            Main.Log($"Replacing '{locationId}' with '{(item == null ? "Default" : item.id)}'");
+            Main.Log($"Replacing '{locationId}' with '{item?.id ?? "Default"}'");
         }
     }
 
-    // When a drop item is loaded at the beginning of a level, change it to a random item
-    [HarmonyPatch(typeof(DropItem), "OnEnable")]
-    class DropItem_Enable_Patch
+    // When a drop item is loaded at the beginning of a level or when spawned, change it to a random item
+    [HarmonyPatch(typeof(DropItem), "CanBeSaved", MethodType.Getter)]
+    class DropItem_Start_Patch
     {
-        public static void Prefix(DropItem __instance, bool ___wasSpawned)
+        public static void Postfix(DropItem __instance, bool ___wasSpawned)
         {
             if (__instance.Item == null || ___wasSpawned) return;
 
@@ -53,7 +53,8 @@ namespace Elderand.Randomizer.Items
                 __instance.SetItem(Main.Data.GetItemObject(item.id), 1);
             }
 
-            Main.Log($"Replacing '{locationId}' with '{(item == null ? "Default" : item.id)}'");
+            Main.Log($"Replacing '{locationId}' with '{item?.id ?? "Default"}'");
+
         }
     }
 

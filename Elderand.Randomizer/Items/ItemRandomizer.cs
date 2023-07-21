@@ -18,14 +18,14 @@ namespace Elderand.Randomizer.Items
 
         public override void LevelLoaded(string name)
         {
-            
+
         }
 
         public ItemReward GetItemAtLocation(string locationId)
         {
             if (_mappedItems == null || !_mappedItems.ContainsKey(locationId))
                 return null;
-                //throw new System.Exception($"Location {locationId} doesn't exist");
+            //throw new System.Exception($"Location {locationId} doesn't exist");
 
             return Main.Data.GetItemRewardData(_mappedItems[locationId]);
         }
